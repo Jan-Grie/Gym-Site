@@ -14,14 +14,14 @@
 	
 	
 	<nav>
-		<a id="Logo1" href="index.html"><img  src="../../03 Archiv - Logos  Grafiken/Logos & Grafiken/Logo1.png" alt=""/></a>
+		<a id="Logo1" href="index.html"><img  src="/Logos & Grafiken/Logo1.png" alt=""/></a>
 		
 		
 		<ul>
 			
-			<li><a class="nav-li-a" href="" > ---</a></li>
+			<li><a class="nav-li-a" href="index.html" > Startseite</a></li>
 			<li><a class="nav-li-a" href="Preise.html">Preise</a></li>
-			<li><a class="nav-li-a" href="Motto.html"> Über uns</a></li>
+			<li><a class="nav-li-a" href="ÜberUns.html"> Über uns</a></li>
 		</ul>
 		
 	</nav>
@@ -31,7 +31,7 @@
 	<!--==============-->
 	
 	
-	<div id="Site">
+	
 	<center><p id="Infotext">Der Reguläre Jahresbetrag liegt bei 240€. Sollten Sie jedoch einen hohen BMI-Wert haben, können Sie aus der
 		folgenden Tabelle den Rabatt entnehmen.</p>	</center>
 	<center>
@@ -49,8 +49,10 @@
 		</center>
 	
 	<br><br><br><br><br>
-		
-		
+<div id="ContainerCenter"></div>	
+
+</div> <!--- Container Centered-->
+
 <div id="Test" class="container">
   <footer class="py-5">
     <div class="row">
@@ -70,7 +72,7 @@
       </div>
 
       <div class="col-2">
-        
+        <img src="/Logos & Grafiken/UnicornBitmap.png" width="140px" alt="Leider konnte das Bild nicht geladen werden"/>
       </div>
 
       <div class="col-4 offset-1">
@@ -81,6 +83,8 @@
             <label for="newsletter1" class="visually-hidden">Email address</label>
             <input id="newsletter1" type="text" class="form-control" placeholder="Email" style="background-color: transparent; border-color: #2b1100ff;">
             <button class="btn btn-primary" type="button" id="Button-Submit">Senden</button>
+            <input type="checkbox" id="Bot-Control" name="Bot-Control" value="Bot-Control" onchange="DisableButton()" hidden /> <!-- Hidden CheckBox as Captcha for Bots-> A Bot would 
+              check a hidden field. A normal person not.-->
           </div>
         </form>
       </div>
@@ -93,7 +97,22 @@
     </div>
   </footer>
 </div>
-	</div> <!--- Ganze Seite-->
 	
+<script>
+  document.querySelector('#copyright-year').innerText = new Date().getFullYear();
+
+  //Bot Protection for Email
+  function DisableButton(){ 
+    const button = document.getElementById('Button-Submit');
+    var checkBox = document.getElementById("Bot-Control");
+    if (checkBox.checked == true){
+      button.disabled = true;
+    } else {
+      button.disabled = false;
+    } 
+  } 
+  
+  
+</script>
 </body>
 </html>

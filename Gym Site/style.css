@@ -1,11 +1,23 @@
 @charset "utf-8";
 /* CSS Document */
+	/*
+	? -> Nicht Benutzt
+	! -> Beendet einen Bereich
+	TODO
+	*/
 
-body{
-		margin: 0%;
-		padding: 0;
-		background-color: #ffccaaff;
+
+	/* ------------- */
+	/* 	Body	*/
+	body{
+			margin: 0%;
+			padding: 0;
+			background-color: #ffccaaff;
 	}
+	/*! End Body */
+
+	/* ------------- */
+	/* 	Navbar	*/
 	nav {
 		
 		height: 90px;
@@ -33,7 +45,7 @@ body{
 	
 	nav li {
 		display: inline-block;
-		margin-top: 20px;
+		margin-top: 30px;
 		margin-right: 30px;
 		
 	}
@@ -49,22 +61,9 @@ body{
 	.nav-li-a:hover{
 		color: #000080ff;
 	}
-	
-	#Impressum{
-		color: #000080ff;
-		text-decoration: none;
-	}
-	
-	#Infotext{
-		margin-left: 10%;
-		margin-right: 10%;
-		margin-top: 10%;
-		font-size: 20px;
-	}
-	
-	
+
 	#Logo1{		
-		margin-top: 40px;
+		margin-top: 35px;
 		margin-left: 45%;
 	}
 	
@@ -73,16 +72,43 @@ body{
 	}
 	
 	#Logo1 img:hover{
-		width: 170px;
+		transform: scale(1.1);
 	}
+
+	/*! 	End Navbar	*/
 	
+	/* ------------- */
+	/* 	Impressum Text	*/
+	#Impressum{
+		color: #000080ff;
+		text-decoration: none;
+	}
+	/*! 	End Impressum Text	*/
+	
+	/* ------------- */
+	/* 	Infotext	*/
+	#Infotext{
+		margin-left: 10%;
+		margin-right: 10%;
+		margin-top: 10%;
+		font-size: 20px;
+	}
+	/* 	End Infotext	*/
+	
+	/*! ------------- */
+	
+	/* ------------- */
+	/* Flex Grid for Images */
 	.flex { 
     	display: flex; 
     	justify-content: center; 
     	align-items: center;
 		
 	}
-	
+	/*! End Flex Grid */
+
+	/* ------------- */
+	/* Images */
 	#Bild1{
 		width: 30%;
 		border-radius: 50px;
@@ -92,56 +118,102 @@ body{
 		width: 30%;
 		border-radius: 50px;
 	}
+	/*! End Images */
 	
+	/* ------------- */
+	/*? NOT in use */
 	#Footer-Text{
 		margin-left: 45%;
 		margin-top: 1%;
 	}
 
-#Button-Submit{
-	color: #2b1100ff!important;
-	border-color: #2b1100ff!important;
-	background-color: transparent!important;
-	border-radius: 6px;
-	border-width: 2px;
+	/* ------------- */
+	/* Button Submit (in footer) */
+	#Button-Submit{
+		color: #2b1100ff!important;
+		border-color: #2b1100ff!important;
+		background-color: transparent!important;
+		border-radius: 6px;
+		border-width: 2px;
+		
+	}
+
+	#Button-Submit:hover{
+		color: #ffccaaff!important;
+		border-color: #2b1100ff!important;
+		background-color: #2b1100ff!important;
+		border-radius: 6px;
+		border-width: 2px;
+	}
+	/*! End Button Submit */
+
+	/* ------------- */
+	/* Newsletter */
+	#newsletter1{
+		border-width: 2px;
+		border-radius: 6px;
+		color: #2b1100ff!important;
+	}
+	/*! End Newsletter */
 	
-}
+	/* ------------- */
+	/* Input (all) */
+	input::placeholder{
+		color: #2b1100ff!important
+	}
+	/*! End Input  */
 
-#Button-Submit:hover{
-	color: #ffccaaff!important;
-	border-color: #2b1100ff!important;
-	background-color: #2b1100ff!important;
-	border-radius: 6px;
-	border-width: 2px;
-}
+	/* ------------- */
+	/* Links a */
+	#Links a{
+		color: #2b1100ff!important;
+	}
 
-#newsletter1{
-	border-width: 2px;
-	border-radius: 6px;
-	color: #2b1100ff!important;
-}
+	#Links a:hover{
+		color: #000080ff!important;
+	}
+	/*! End Links a*/
+
+	/* ------------- */
+	/* Impressum -> Im Footer, nicht die Seite*/
+	#Impressum{
+		color: #2b1100ff!important
+	}
+
+	#Impressum:hover{
+		color: #000080ff!important;
+	}
+	/*! End Impressum */
 	
-input::placeholder{
-	color: #2b1100ff!important
-}
+	/* ------------- */
+	/* Form Control */
+	.form-control:focus {
+			border-color: #2b1100ff;
+			box-shadow: 0 0 0 0.2rem #ff00ffff!important;
+	}
+	/*! End Form Control */ 
 
-#Links a{
-	color: #2b1100ff!important;
-}
+	/* ------------- */
+	/* Container Center */
+	#ContainerCenter{
+		text-align: center;
+		margin-top: 120px;
+	}
+	/*! End Container Center */
 
-#Links a:hover{
-	color: #000080ff!important;
-}
+	/* ------------- */
+	/* Über Uns Text */
+	#ÜberUnsText{
+		margin-left: 20%;
+		margin-right: 20%;
+		font-size: 17px;
+	}
+	/*! End Über Uns Text */
 
-#Impressum{
-	color: #2b1100ff!important
-}
-
-#Impressum:hover{
-	color: #000080ff!important;
-}
-
-.form-control:focus {
-        border-color: #2b1100ff;
-        box-shadow: 0 0 0 0.2rem #ff00ffff!important;
-    } 
+	/* ------------- */
+	/* Free Vektor -> Impressum Fee */
+	#FeeVektor{
+		width: 150px;
+		margin-top: 20px;
+	}
+	/*! Free Vektor */

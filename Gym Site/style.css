@@ -1,0 +1,147 @@
+@charset "utf-8";
+/* CSS Document */
+
+body{
+		margin: 0%;
+		padding: 0;
+		background-color: #ffccaaff;
+	}
+	nav {
+		
+		height: 90px;
+		width: 100%;		
+		background-color: #ffccaaff ; 
+		opacity: 95%;
+		border-bottom: thin;
+		border-bottom-style: solid;  
+		left: 0;
+		overflow: hidden;
+  		position: fixed; /* Set the navbar to fixed position */
+  		top: 0; /* Position the navbar at the top of the page */
+		z-index: 10;  
+  		
+		
+	}
+	
+	nav ul {
+		float:right;
+	}
+	
+	nav a {
+		display: inline-block;
+	}
+	
+	nav li {
+		display: inline-block;
+		margin-top: 20px;
+		margin-right: 30px;
+		
+	}
+	.nav-li-a{
+		font-size: 20px;
+		color: #2b1100ff;
+		text-decoration: none;
+		/*border-style: solid;
+		border-radius: 10px;
+		padding: 2px;*/
+	}
+	
+	.nav-li-a:hover{
+		color: #000080ff;
+	}
+	
+	#Impressum{
+		color: #000080ff;
+		text-decoration: none;
+	}
+	
+	#Infotext{
+		margin-left: 10%;
+		margin-right: 10%;
+		margin-top: 10%;
+		font-size: 20px;
+	}
+	
+	
+	#Logo1{		
+		margin-top: 40px;
+		margin-left: 45%;
+	}
+	
+	#Logo1 img {
+		width: 160px;
+	}
+	
+	#Logo1 img:hover{
+		width: 170px;
+	}
+	
+	.flex { 
+    	display: flex; 
+    	justify-content: center; 
+    	align-items: center;
+		
+	}
+	
+	#Bild1{
+		width: 30%;
+		border-radius: 50px;
+		margin-right: 5px;
+	}
+	#Bild2{
+		width: 30%;
+		border-radius: 50px;
+	}
+	
+	#Footer-Text{
+		margin-left: 45%;
+		margin-top: 1%;
+	}
+
+#Button-Submit{
+	color: #2b1100ff!important;
+	border-color: #2b1100ff!important;
+	background-color: transparent!important;
+	border-radius: 6px;
+	border-width: 2px;
+	
+}
+
+#Button-Submit:hover{
+	color: #ffccaaff!important;
+	border-color: #2b1100ff!important;
+	background-color: #2b1100ff!important;
+	border-radius: 6px;
+	border-width: 2px;
+}
+
+#newsletter1{
+	border-width: 2px;
+	border-radius: 6px;
+	color: #2b1100ff!important;
+}
+	
+input::placeholder{
+	color: #2b1100ff!important
+}
+
+#Links a{
+	color: #2b1100ff!important;
+}
+
+#Links a:hover{
+	color: #000080ff!important;
+}
+
+#Impressum{
+	color: #2b1100ff!important
+}
+
+#Impressum:hover{
+	color: #000080ff!important;
+}
+
+.form-control:focus {
+        border-color: #2b1100ff;
+        box-shadow: 0 0 0 0.2rem #ff00ffff!important;
+    } 

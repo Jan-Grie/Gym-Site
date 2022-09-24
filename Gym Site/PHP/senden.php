@@ -20,7 +20,7 @@
 		
 		<ul>
 			
-			<li><a class="nav-li-a" href="" > ---</a></li>
+			<li><a class="nav-li-a" href="" > Startseite</a></li>
 			<li><a class="nav-li-a" href="Index.html">Preise</a></li>
 			<li><a class="nav-li-a" href="Motto.html"> Über uns</a></li>
 		</ul>
@@ -34,11 +34,32 @@
 <?php
 $to = htmlentities($_POST["Email"]);
 $subject = "Muckibude";
-$txt = "Willkommen bei der Muckibude Feenstaub. Schön das du dich für unserer Angebot interessierst. Denk unbedingt an den Eröffnungstermin am 3.10.2022 in Hagen. 
-Auch wichtig zu wissen, wenn du dich am Tag der Eröffnung anmeldest, zahlst du für deine Mitgliedschaft nur den halben Preis.";
+$txt = '
+<html>
+<head>
+<title>Muckibude Feenstaub</title>
+<meta charset="UTF-8">
+</head>
+<body style="background-color:#ffccaaff">
+
+
+    <div style="display: flex; justify-content: center;">
+        <h1>Willkommen bei der Muckibude Fennstaub </h1>
+    </div>
+    
+    <p style="margin-left: 10%; margin-right:10%">In dieser Email sind noch einmal alle für dich wichtigen Infos zur Eröffnung enthalten.</p>
+        
+    <p style="margin-left: 10%; margin-right:10%">Das wichtigste zuerst. Die Eröffnung ist am <b>3.10.2022</b> in der Horststraße 13, 58093 Hagen.
+        Am Tag der Eröffnung erwartet dich ein tolles Angebot. Solltest du nämlich am Tag der Eröffnung deine Mitgliedschaft abschließen, erhälst du 50% Rabatt.</p>    
+
+</body>
+</html>
+';
 $headers = "From: Muckibude@Feenstaub.de" . "\r\n" .
 "CC: ";
-
+// Always set content-type when sending HTML email
+$headers = "MIME-Version: 1.0" . "\r\n";
+$headers .= "Content-type:text/html;charset=UTF-8" . "\r\n";
 mail($to,$subject,$txt,$headers);
 
 echo "<p style='margin-top:20%; margin-left:35%;'> Glückwunsch, eine Email mit den wichtigsten Infos wurde gerade eben an <b>$to</b> gesendet.</p>";

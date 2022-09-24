@@ -166,8 +166,13 @@
 	
 	/* ------------- */
 	/* Input (all) */
+	input[type="text"]{
+		background-color:#ffccaaff!important;
+	}
+	
+	
 	input::placeholder{
-		color: #2b1100ff!important
+		color: #2b1100ff!important;		
 	}
 	/*! End Input  */
 

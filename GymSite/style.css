@@ -163,6 +163,9 @@
 		border-radius: 6px;
 		border-width: 2px;
 	}
+	#Button-Submit:focus{
+		box-shadow: none!important;
+	}
 	/*! End Button Submit */
 
 	/* ------------- */
@@ -171,12 +174,13 @@
 		border-width: 2px;
 		border-radius: 6px;
 		color: #2b1100ff!important;
+		
 	}
 	/*! End Newsletter */
 	
 	/* ------------- */
 	/* Input (all) */
-	input[type="text"]{
+	input[type="email"]{
 		background-color:#ffccaaff!important;
 	}
 	
@@ -184,6 +188,7 @@
 	input::placeholder{
 		color: #2b1100ff!important;		
 	}
+	
 	/*! End Input  */
 
 	/* ------------- */

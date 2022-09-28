@@ -98,12 +98,12 @@
       </div>
 
       <div class="col-4 offset-1">
-        <form action="/GymSite/PHP/senden.php" method="post">
+        <form action="/GymSite/PHP/senden.php" method="post" autocomplete="off">
           <h5>Erhalte eine Email</h5>
           <p>Einmalige Email mit allen wichtigen Infos zur Eröffnung</p>
           <div class="d-flex w-100 gap-2">
             <label for="newsletter1" class="visually-hidden">Email address</label>
-            <input id="newsletter1" name="Email" type="email" class="form-control" placeholder="Email" style="background-color: transparent; border-color: #2b1100ff;">
+            <input autocomplete="off" id="newsletter1" name="Email" type="email" class="form-control" placeholder="Email" style="background-color: transparent; border-color: #2b1100ff;">
             <button class="btn btn-primary" type="submit" id="Button-Submit">Senden</button>
             <input type="checkbox" id="Bot-Control" name="Bot-Control" value="Bot-Control" onchange="DisableButton()" hidden /> <!-- Hidden CheckBox as Captcha for Bots-> A Bot would 
             check a hidden field. A normal person not.-->

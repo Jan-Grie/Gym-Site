@@ -65,7 +65,7 @@ $headers = "MIME-Version: 1.0" . "\r\n";
 $headers .= "Content-type:text/html;charset=UTF-8" . "\r\n";
 mail($to,$subject,$txt,$headers);
 
-echo "<p style='margin-top:20%; margin-left:35%;'> Glückwunsch, eine Email mit den wichtigsten Infos wurde gerade eben an <b>$to</b> gesendet.</p>";
+echo "<center><p style='margin-top:20%;'> Glückwunsch, eine Email mit den wichtigsten Infos wurde gerade eben an <b>$to</b> gesendet.</p></center>";
 	
 	
 ?>	

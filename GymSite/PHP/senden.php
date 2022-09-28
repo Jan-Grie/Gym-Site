@@ -22,10 +22,10 @@
 		
 		<ul>
 			
-			<li><a class="nav-li-a" href="index.html" > Startseite</a></li>
-			<li><a class="nav-li-a" href="Bilder.html"> Bilder</a></li>
-      <li><a class="nav-li-a" href="Preise.html">Preise</a></li>
-			<li><a class="nav-li-a" href="ÜberUns.html"> Über uns</a></li>
+			<li><a class="nav-li-a" href="/GymSite/index.html" > Startseite</a></li>
+			<li><a class="nav-li-a" href="/GymSite/Bilder.html"> Bilder</a></li>
+      <li><a class="nav-li-a" href="/GymSite/Preise.html">Preise</a></li>
+			<li><a class="nav-li-a" href="/GymSite/ÜberUns.html"> Über uns</a></li>
 		</ul>
 		
 	</nav>
@@ -84,11 +84,11 @@ echo "<p style='margin-top:20%; margin-left:35%;'> Glückwunsch, eine Email mit 
       <div id="Links" class="col-2">
         <h5>Links</h5>
         <ul class="nav flex-column">
-          <li class="nav-item mb-2"><a href="index.html" class="nav-link p-0 text-muted">Startseite</a></li>
-          <li class="nav-item mb-2"><a href="Bilder.html" class="nav-link p-0 text-muted">Bilder</a></li>
-          <li class="nav-item mb-2"><a href="Preise.html" class="nav-link p-0 text-muted">Preise</a></li>
-          <li class="nav-item mb-2"><a href="ÜberUns.html" class="nav-link p-0 text-muted">Über Uns</a></li>
-          <li class="nav-item mb-2"><a href="Impressum.html" class="nav-link p-0 text-muted">Impressum</a></li>
+          <li class="nav-item mb-2"><a href="/GymSite/index.html" class="nav-link p-0 text-muted">Startseite</a></li>
+          <li class="nav-item mb-2"><a href="/GymSite/Bilder.html" class="nav-link p-0 text-muted">Bilder</a></li>
+          <li class="nav-item mb-2"><a href="/GymSite/Preise.html" class="nav-link p-0 text-muted">Preise</a></li>
+          <li class="nav-item mb-2"><a href="/GymSite/ÜberUns.html" class="nav-link p-0 text-muted">Über Uns</a></li>
+          <li class="nav-item mb-2"><a href="/GymSite/Impressum.html" class="nav-link p-0 text-muted">Impressum</a></li>
         </ul>
       </div>
 
@@ -97,13 +97,13 @@ echo "<p style='margin-top:20%; margin-left:35%;'> Glückwunsch, eine Email mit 
       </div>
 
       <div class="col-4 offset-1">
-        <form>
+        <form action="/GymSite/PHP/senden.php" method="post">
           <h5>Erhalte eine Email</h5>
           <p>Einmalige Email mit allen wichtigen Infos zur Eröffnung</p>
           <div class="d-flex w-100 gap-2">
             <label for="newsletter1" class="visually-hidden">Email address</label>
-            <input id="newsletter1" type="text" class="form-control" placeholder="Email" style="background-color: transparent; border-color: #2b1100ff;">
-            <button class="btn btn-primary" type="button" id="Button-Submit">Senden</button>
+            <input id="newsletter1" type="email" name="Email" class="form-control" placeholder="Email" style="background-color: transparent; border-color: #2b1100ff;">
+            <button class="btn btn-primary" type="submit" id="Button-Submit">Senden</button>
             <input type="checkbox" id="Bot-Control" name="Bot-Control" value="Bot-Control" onchange="DisableButton()" hidden /> <!-- Hidden CheckBox as Captcha for Bots-> A Bot would 
             check a hidden field. A normal person not.-->
           </div>

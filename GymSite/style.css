@@ -2,7 +2,7 @@
 /* CSS Document */
 	/*
 	? -> Nicht Benutzt
-	! -> Beendet einen Bereich
+	! -> Beendet einen Bereich 
 	TODO
 	*/
 
@@ -21,14 +21,14 @@
 
 	/* ------------- */
 	/* 	Navbar	*/
+	
 	nav {
 		
 		height: 90px;
 		width: 100%;		
-		background-color: #ffccaaff ; 
-		opacity: 95%;
-		border-bottom: thin;
-		border-bottom-style: solid;  
+		backdrop-filter: blur(5px);
+		opacity: 100%;
+		align-items: center;
 		left: 0;
 		overflow: hidden;
   		position: fixed; /* Set the navbar to fixed position */
@@ -38,6 +38,24 @@
 		
 	}
 	
+	/* Old Navbar Design
+	nav {
+		background-color: #ffccaaff!important;
+		height: 90px;
+		width: 100%;		
+		
+		opacity: 95%;
+		border-bottom: thin;
+		border-bottom-style: solid;  
+		left: 0;
+		overflow: hidden;
+  		position: fixed; 	-> Set the navbar to fixed position 
+  		top: 0;				-> Position the navbar at the top of the page 
+		z-index: 10;  
+  		
+		
+	}
+	*/
 	nav ul {
 		float:right;
 		
